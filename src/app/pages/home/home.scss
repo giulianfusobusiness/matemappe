@@ -1,0 +1,17 @@
+.home {
+  min-height: calc(100vh - 220px);
+  padding: 60px 24px;
+}
+
+.video-container {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+}
+
+.video-container video {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 2px solid black;
+}

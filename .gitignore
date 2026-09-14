@@ -1,0 +1,54 @@
+# File generati dalla compilazione
+/dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+
+# Dipendenze Node
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache Angular
+/.angular/
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# Altri IDE
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# File riservati
+.env
+.env.*
+*.pem
+*.key
+
+# Archivi e backup
+*.zip
+*.rar
+*.7z
+
+# Test e copertura
+/coverage/
+__screenshots__/
+testem.log
+/typings/
+
+# File temporanei
+.sass-cache/
+connect.lock
+libpeerconnection.log
+
+# File di sistema
+.DS_Store
+Thumbs.db
+desktop.ini
