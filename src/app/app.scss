@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+}
+
+.site-footer {
+  padding: 24px;
+  background-color: #222222;
+  border-top: 1px solid black;
+  color: white;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+}
