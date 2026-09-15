@@ -1,6 +1,13 @@
 <main class="home">
   <div class="video-container">
-    <video controls autoplay muted loop playsinline>
+    <video 
+      class="home-video"
+      autoplay
+      loop
+      playsinline
+      preload="auto"
+      [muted]="true"
+      controls>
       <source
         src="videos/presentazione-matemappe.mp4"
         type="video/mp4"
