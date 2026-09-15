@@ -1,19 +1,8 @@
 <main class="home">
-  <div class="video-container">
-    <video 
-      class="home-video"
-      autoplay
-      loop
-      playsinline
-      preload="auto"
-      [muted]="true"
-      controls>
-        <source
-          src="videos/presentazione-matemappe.mp4"
-          type="video/mp4"
-        >
-
-      Il tuo browser non supporta la riproduzione video.
-    </video>
-  </div>
+  <object
+    class="home-map"
+    data="maps/matemappe-home.svg"
+    type="image/svg+xml"
+    aria-label="Mappa concettuale della home"
+  ></object>
 </main>
