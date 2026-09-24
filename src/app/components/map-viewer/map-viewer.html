@@ -1,0 +1,16 @@
+<object
+  [attr.data]="resource"
+  type="image/svg+xml"
+  [attr.aria-label]="label"
+  (load)="loaded($event)"
+  (error)="failed.set(true)"
+>
+  <a [href]="src">Apri la mappa</a>
+</object>
+
+@if (failed()) {
+  <p role="alert">
+    Impossibile caricare la mappa.
+    <a [href]="src">Aprila direttamente</a>.
+  </p>
+}

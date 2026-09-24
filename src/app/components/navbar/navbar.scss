@@ -125,3 +125,73 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
+:host {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.site-header {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand,
+.brand-text {
+  min-width: 0;
+}
+
+.brand-logo {
+  flex-shrink: 0;
+}
+
+@media (max-width: 950px) {
+  .site-header {
+    padding: 20px 16px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 12px;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-text h1 {
+    font-size: 32px;
+  }
+
+  .brand-text p {
+    font-size: 16px;
+  }
+
+  nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  nav a,
+  nav button {
+    font-size: 15px;
+  }
+
+  .dropdown-menu {
+    min-width: 0;
+    width: min(260px, 70vw);
+  }
+
+  .dropdown-menu a {
+    white-space: normal;
+  }
+
+  .dropdown:not(.dropdown-right) .dropdown-menu {
+    left: -70px;
+  }
+}
