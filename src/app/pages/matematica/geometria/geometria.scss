@@ -1,0 +1,57 @@
+.category-page {
+  min-height: calc(100vh - 220px);
+  padding: 56px 24px;
+  color: white;
+  text-align: center;
+}
+
+.category-page h1 {
+  margin: 0 0 48px;
+  font-family: "Courier New", monospace;
+  font-size: clamp(30px, 4vw, 46px);
+}
+
+.button-list {
+  width: min(100%, 900px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.button-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  padding: 20px;
+
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 8px;
+
+  color: black;
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.button-list a:hover {
+  background-color: #dddddd;
+  transform: translateY(-4px);
+}
+
+@media (max-width: 650px) {
+  .button-list {
+    grid-template-columns: 1fr;
+  }
+
+  .category-page {
+    padding: 40px 18px;
+  }
+}

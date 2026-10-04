@@ -20,6 +20,12 @@ export const routes: Routes = [
         loadChildren: () =>
           import('./pages/matematica/analisi-1/analisi-1.routes')
             .then(m => m.ANALISI_1_ROUTES)
+      },
+      {
+        path: 'geometria',
+        loadChildren: () =>
+          import('./pages/matematica/geometria/geometria.routes')
+            .then(m => m.GEOMETRIA_ROUTES)
       }
     ]
   },
